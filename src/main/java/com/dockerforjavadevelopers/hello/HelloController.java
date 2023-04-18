@@ -61,4 +61,9 @@ public class HelloController {
 
     return webClient.get().retrieve().bodyToMono(String.class);
   }
+
+  @RequestMapping("/hello")
+  public String hello() {
+    return "hello world";
+  }
 }
